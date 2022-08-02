@@ -1,0 +1,34 @@
+<template>
+	<lightning-card title="Comp Filhos">
+		<div class="slds-m-around_medium">
+			<!-- componente pai (app) pode chamar quantas vezes quiser componente filho -->
+			<!-- chamando um componente filho c-nomeFilho -->
+			<c-child nome="Mário"></c-child>
+			<c-child nome="Luigi"></c-child>
+			<!-- <c-child></c-child> -->
+			<!-- <c-child></c-child> -->
+
+			<!-- chamando um componente empresa -->
+			<!-- <c-empresa></c-empresa> -->
+			<c-empresa nome="Mamaco Corp" cnpj='0011'></c-empresa>
+			<c-empresa nome="Nana pet" cnpj='0012'></c-empresa>
+			<!-- crie um componente chamdo produto
+			produto.html || produto.js
+		
+			produto.html
+			exibir a seguinte informação
+			h1 -> produto x
+			p -> preço: R$ x
+
+			produto.js
+				estrutura base de classe
+			-->
+
+			<!-- chamando um componente produto -->
+			<!-- <c-produto></c-produto> -->
+			<c-produto nome="Cadeira" preco='699,90'></c-produto>
+			<c-produto nome="Mesa" preco='899,90'></c-produto>
+			<c-produto nome="Monitor" preco='599,90'></c-produto>
+		</div>
+	</lightning-card>
+</template>
